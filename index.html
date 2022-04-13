@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="actions.js"></script>
     <title>Alex Shop</title>
 </head>
 
 <body>
-    <div class="main_container">
+    <div class="main_container" id="mainContainer">
         <nav class="nav_container">
             <div class="nav_center_container">
                 <div class="navigation_icons_container">
@@ -18,7 +19,7 @@
                     <a href="#"><img src="./img/search_loupe.svg" alt="search loupe"></a>
                 </div>
                 <div class="navigation_icons_container">
-                    <a href="#"><img src="./img/menu_burger.svg" alt="menu burger"></a>
+                    <div onclick="showSideMenu()"><img src="./img/menu_burger.svg" alt="menu burger"></div>
                     <a href="#"><img src="./img/person.svg" alt="person"></a>
                     <a href="#"><img src="./img/basket.svg" alt="basket"></a>
                 </div>
@@ -28,7 +29,7 @@
         <div class="top_main_container">
             <div class="top_container">
                 <div class="top_model_man">
-                    <img src="./img/top_model_man.png" alt="top model man">
+                    <img src="./img/top_model_man.png" class="fluid_image" alt="top model man">
                 </div>
                 <div class="top_content_container">
                     <div class="top_content">
@@ -41,11 +42,44 @@
                             <span class="fashion_text">fashion</span>
                         </div>
                     </div>
+                    <div class = "top_content_menu" id="sideMenu">
+                        <div class ="close_side_menu" onclick="hideSideMenu()">
+                            <img src="./img/close.svg" alt="close">
+                        </div>
+                        <h2>menu</h2>
+                        <ul class ="top_content_menu_list">
+                            <li>man
+                                <ul>
+                                    <li>accessories</li>
+                                    
+                                    <li>bags</li>
+                                    
+                                    <li>denim</li>
+                                    
+                                    <li>t-shirts</li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+<script>    
+function myFunction(x) {
+        if (x.matches) { // If media query matches
+            var x = document.getElementById("sideMenu");
+            x.style.display = "none";
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 1600px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction); // Attach listener function on state changes
+    </script>
+
 </body>
 
 </html>
