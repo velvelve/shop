@@ -42,44 +42,92 @@
                             <span class="fashion_text">fashion</span>
                         </div>
                     </div>
-                    <div class = "top_content_menu" id="sideMenu">
-                        <div class ="close_side_menu" onclick="hideSideMenu()">
-                            <img src="./img/close.svg" alt="close">
-                        </div>
-                        <h2>menu</h2>
-                        <ul class ="top_content_menu_list">
-                            <li>man
-                                <ul>
-                                    <li>accessories</li>
-                                    
-                                    <li>bags</li>
-                                    
-                                    <li>denim</li>
-                                    
-                                    <li>t-shirts</li>
-                                    
-                                </ul>
-                            </li>
+                </div>
+            </div>
+            <div class="top_content_menu" id="sideMenu">
+                <div class="close_side_menu">
+                    <img src="./img/close.svg" onclick="hideSideMenu()" alt="close">
+                </div>
+                <h2 class="top_content_menu_heading">menu</h2>
+                <ul class="top_content_menu_list">
+                    <li class="top_content_menu_list_element">man
+                        <ul class="top_content_submenu_list">
+                            <li class="top_content_submenu_list_element">accessories</li>
+                            <li class="top_content_submenu_list_element">bags</li>
+                            <li class="top_content_submenu_list_element">denim</li>
+                            <li class="top_content_submenu_list_element">t-shirts</li>
                         </ul>
+                    </li>
+                    <li class="top_content_menu_list_element">woman
+                        <ul class="top_content_submenu_list">
+                            <li class="top_content_submenu_list_element">accessories</li>
+                            <li class="top_content_submenu_list_element">jackets & coats</li>
+                            <li class="top_content_submenu_list_element">polos</li>
+                            <li class="top_content_submenu_list_element">t-shirts</li>
+                            <li class="top_content_submenu_list_element">shirts</li>
+                        </ul>
+                    </li>
+                    <li class="top_content_menu_list_element">kids
+                        <ul class="top_content_submenu_list">
+                            <li class="top_content_submenu_list_element">accessories</li>
+                            <li class="top_content_submenu_list_element">jackets & coats</li>
+                            <li class="top_content_submenu_list_element">polos</li>
+                            <li class="top_content_submenu_list_element">t-shirts</li>
+                            <li class="top_content_submenu_list_element">shirts</li>
+                            <li class="top_content_submenu_list_element">bugs</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="goods_container">
+            <div class="specials_horizontal">
+                <div class="specials_element">
+                    <div class="specials_inner_element">
+                        <div class="specials_brightnes"></div>
+                        <img src="./img/specials_first.png" class="fluid_image" alt="special for women">
+                        <div class="specials_image_text_container">
+                            <span class="specials_image_text_top">30% off</span>
+                            <span class="fashion_text">for women</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specials_element">
+                    <div class="specials_inner_element">
+                        <div class="specials_brightnes"></div>
+                        <img src="./img/specials_second.png" class="fluid_image" alt="special for men">
+                        <div class="specials_image_text_container">
+                            <span class="specials_image_text_top">hot deal</span>
+                            <span class="fashion_text">for men</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="specials_element">
+                    <div class="specials_inner_element">
+                        <div class="specials_brightnes"></div>
+                        <img src="./img/specials_third.png" class="fluid_image" alt="special for kids">
+                        <div class="specials_image_text_container">
+                            <span class="specials_image_text_top">new arrivals</span>
+                            <span class="fashion_text">for kids</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specials_element">
+                <div class="specials_inner_element">
+                    <div class="specials_brightnes"></div>
+                    <img src="./img/specials_bottom.png" class="fluid_image" alt="special bottom image">
+                    <div class="specials_image_text_container">
+                        <span class="specials_image_text_top">luxirous & trendy</span>
+                        <span class="fashion_text">accesories</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-<script>    
-function myFunction(x) {
-        if (x.matches) { // If media query matches
-            var x = document.getElementById("sideMenu");
-            x.style.display = "none";
-        }
-    }
-
-    var x = window.matchMedia("(max-width: 1600px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction); // Attach listener function on state changes
-    </script>
-
 </body>
 
 </html>
