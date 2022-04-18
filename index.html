@@ -6,41 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="actions.js"></script>
     <title>Alex Shop</title>
 </head>
 
 <body>
-    <div class="main_container" id="mainContainer">
-        <nav class="nav_container">
-            <div class="nav_center_container">
-                <div class="navigation_icons_container">
-                    <a href="#"><img src="./img/top_logo.svg" alt="top logo"></a>
-                    <a href="#"><img src="./img/search_loupe.svg" alt="search loupe"></a>
-                </div>
-                <div class="navigation_icons_container">
-                    <div onclick="showSideMenu()"><img src="./img/menu_burger.svg" alt="menu burger"></div>
-                    <a href="#"><img src="./img/person.svg" alt="person"></a>
-                    <a href="#"><img src="./img/basket.svg" alt="basket"></a>
-                </div>
+<div class="main_container" id="mainContainer">
+    <nav class="nav_container">
+        <div class="nav_center_container">
+            <div class="navigation_icons_container">
+                <a href="#"><img src="./img/top_logo.svg" alt="top logo"></a>
+                <a href="#"><img src="./img/search_loupe.svg" alt="search loupe"></a>
             </div>
-        </nav>
+            <div class="navigation_icons_container">
+                <div onmouseover="showSideMenu()"><img src="./img/menu_burger.svg" alt="menu burger"></div>
+                <a href="#"><img src="./img/person.svg" alt="person"></a>
+                <a href="#"><img src="./img/basket.svg" alt="basket"></a>
+            </div>
+        </div>
+    </nav>
 
-        <div class="top_main_container">
-            <div class="top_container">
-                <div class="top_model_man">
-                    <img src="./img/top_model_man.png" class="fluid_image" alt="top model man">
-                </div>
-                <div class="top_content_container">
-                    <div class="top_content">
-                        <div class="pink_rectangle">
-                            <img src="./img/pink_rectangle.svg" class="fluid_image" alt="pink rectangle">
-                        </div>
-                        <div class="top_content_text">
-                            <span class="brand_text">the brand</span>
-                            <span class="luxerious_text">of luxerious </span>
-                            <span class="fashion_text">fashion</span>
-                        </div>
+    <div class="top_main_container">
+        <div class="top_container">
+            <div class="top_model_man">
+                <img src="./img/top_model_man.png" class="fluid_image" alt="top model man">
+            </div>
+            <div class="top_content_container">
+                <div class="top_content">
+                    <div class="pink_rectangle">
+                    </div>
+                    <div class="top_content_text">
+                        <span class="brand_text">the brand</span>
+                        <span class="luxury_text">of luxerious </span>
+                        <span class="fashion_text">fashion</span>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,9 @@
                 <div class="close_side_menu">
                     <img src="./img/close.svg" onclick="hideSideMenu()" alt="close">
                 </div>
-                <h2 class="top_content_menu_heading">menu</h2>
+                <h2 class="top_content_menu_heading">
+                    menu
+                </h2>
                 <ul class="top_content_menu_list">
                     <li class="top_content_menu_list_element">man
                         <ul class="top_content_submenu_list">
@@ -80,54 +82,96 @@
                 </ul>
             </div>
         </div>
+    </div>
 
 
-        <div class="goods_container">
-            <div class="specials_horizontal">
-                <div class="specials_element">
-                    <div class="specials_inner_element">
-                        <div class="specials_brightnes"></div>
+    <div class="goods_container">
+        <div class="specials_horizontal">
+            <div class="specials_element">
+                <div class="specials_inner_element">
+                    <a href="contacts.html">
+                        <div class="specials_brightness"></div>
                         <img src="./img/specials_first.png" class="fluid_image" alt="special for women">
                         <div class="specials_image_text_container">
-                            <span class="specials_image_text_top">30% off</span>
-                            <span class="fashion_text">for women</span>
+                            <a href="contacts.html" class="specials_image_text_top">30% off</a>
+                            <a href="contacts.html" class="fashion_text">for women</a>
                         </div>
-                    </div>
+                    </a>
                 </div>
+            </div>
 
-                <div class="specials_element">
-                    <div class="specials_inner_element">
-                        <div class="specials_brightnes"></div>
+            <div class="specials_element">
+                <div class="specials_inner_element">
+                    <a href="contacts.html">
+                        <div class="specials_brightness"></div>
                         <img src="./img/specials_second.png" class="fluid_image" alt="special for men">
                         <div class="specials_image_text_container">
-                            <span class="specials_image_text_top">hot deal</span>
-                            <span class="fashion_text">for men</span>
+                            <a class="specials_image_text_top">hot deal</a>
+                            <a class="fashion_text">for men</a>
                         </div>
-                    </div>
-                </div>
-                <div class="specials_element">
-                    <div class="specials_inner_element">
-                        <div class="specials_brightnes"></div>
-                        <img src="./img/specials_third.png" class="fluid_image" alt="special for kids">
-                        <div class="specials_image_text_container">
-                            <span class="specials_image_text_top">new arrivals</span>
-                            <span class="fashion_text">for kids</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="specials_element">
                 <div class="specials_inner_element">
-                    <div class="specials_brightnes"></div>
-                    <img src="./img/specials_bottom.png" class="fluid_image" alt="special bottom image">
-                    <div class="specials_image_text_container">
-                        <span class="specials_image_text_top">luxirous & trendy</span>
-                        <span class="fashion_text">accesories</span>
-                    </div>
+                    <a href="contacts.html">
+                        <div class="specials_brightness"></div>
+                        <img src="./img/specials_third.png" class="fluid_image" alt="special for kids">
+                        <div class="specials_image_text_container">
+                            <a class="specials_image_text_top">new arrivals</a>
+                            <a class="fashion_text">for kids</a>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="specials_element">
+            <div class="specials_inner_element">
+                <a href="contacts.html">
+                    <div class="specials_brightness"></div>
+                    <img src="./img/specials_bottom.png" class="fluid_image" alt="special bottom image">
+                    <div class="specials_image_text_container">
+                        <a class="specials_image_text_top">luxirous & trendy</a>
+                        <a class="fashion_text">accesories</a>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
-</body>
 
+    <div class="featured_items_container">
+        <div class="featured_items_heading_text">Featured items</div>
+        <div class="featured_items_subheading_text">Shop for items based on what we featured in this week</div>
+        <div class="featured_cards_row">
+            <div class="featured_card">
+                <img src="./img/featured_top_left.png" class="fluid_image" alt="top left card">
+            </div>
+            <div class="featured_card">
+                <img src="./img/featured_top_middle.png" class="fluid_image" alt="top left card">
+            </div>
+
+            <div class="featured_card">
+
+                <img src="./img/featured_top_right.png" class="fluid_image" alt="top left card">
+            </div>
+            <div class="featured_card">
+                <img src="./img/featured_bottom_left.png" class="fluid_image" alt="top left card">
+            </div>
+
+            <div class="featured_card">
+
+                <img src="./img/featured_bottom_middle.png" class="fluid_image" alt="top left card">
+            </div>
+
+            <div class="featured_card">
+
+                <img src="./img/featured_bottom_right.png" class="fluid_image" alt="top left card">
+            </div>
+        </div>
+        <div class="featured_browse_button"></div>
+    </div>
+
+
+</div>
+</body>
 </html>
