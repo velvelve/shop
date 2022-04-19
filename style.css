@@ -29,6 +29,52 @@
     align-items: center;
 }
 
+.basket{
+ position: relative;
+}
+.basket_menu{
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    padding: 8px 8px;
+}
+
+.basket:hover .basket_menu{
+    display: block;
+    min-width: 100px;
+}
+
+.basket_link{
+    display: block;
+    margin-bottom: 8px;
+
+}
+
+.basket_link:last-of-type{
+    margin-bottom: 0;
+}
+
+.basket_image{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.basket_total{
+    display: flex;
+    flex-flow: column;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.basket_total span{
+    display: block;
+}
+
+
 .fluid_image {
     max-height: 100%;
     max-width: 100%;
