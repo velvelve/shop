@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 html, body {
@@ -14,11 +15,13 @@ html, body {
 .main_container {
   display: flex;
   flex-flow: column;
+
 }
 
 .nav_container {
   background-color: #222222;
   display: block;
+
 }
 
 .nav_center_container {
@@ -28,6 +31,7 @@ html, body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 18px 32px;
+
 }
 
 .navigation_icons_container {
@@ -35,10 +39,12 @@ html, body {
   flex-flow: row;
   gap: 16px;
   align-items: center;
+
 }
 
 .basket {
   position: relative;
+
 }
 
 .basket_badge {
@@ -54,6 +60,7 @@ html, body {
   position: absolute;
   top: -15%;
   right: -15%;
+
 }
 
 .basket_menu {
@@ -66,29 +73,33 @@ html, body {
   border: 1px solid #E8E8E8;
   padding: 8px;
   z-index: 2;
+
 }
 
 .basket:hover .basket_menu {
   display: block;
   min-width: 100px;
+
 }
 
 .basket_link {
   display: block;
   margin-bottom: 8px;
+
 }
 
 .basket_link:last-of-type {
   margin-bottom: 0;
 }
 
-.basket_link:hover {
+.basket_link:hover{
   filter: brightness(40%);
 }
 
 .basket_image {
   max-height: 100px;
   max-width: 100px;
+
 }
 
 .basket_total {
@@ -96,11 +107,14 @@ html, body {
   flex-flow: column;
   padding: 8px 0;
   text-align: center;
+
 }
 
 .basket_total span {
   display: block;
+
 }
+
 
 .fluid_image {
   max-height: 100%;
@@ -112,6 +126,7 @@ html, body {
 .top_main_container {
   display: block;
   background-color: #F1E4E6;
+
 }
 
 .top_container {
@@ -119,16 +134,19 @@ html, body {
   max-width: 1600px;
   justify-content: center;
   margin: 0 auto;
+
 }
 
 .top_model_man {
   flex: 1;
   margin-top: auto;
+
 }
 
 .top_content_container {
   flex: 1;
   display: flex;
+
 }
 
 .top_content {
@@ -136,6 +154,7 @@ html, body {
   flex-flow: row;
   align-items: center;
   padding-left: 64px;
+
 }
 
 .top_content_text {
@@ -143,6 +162,7 @@ html, body {
   float: left;
   padding-left: 12px;
   max-width: 377px;
+
 }
 
 .top_content_menu {
@@ -158,12 +178,14 @@ html, body {
   width: 0;
   padding-left: 0;
   margin-left: 0;
+
 }
 
 .opened {
   width: 230px;
   padding-left: 32px;
   margin-left: -262px;
+
 }
 
 .alt_top_content_menu {
@@ -184,31 +206,35 @@ html, body {
 
 .alt_opened {
   display: block;
+
 }
 
 .top_content_menu_heading {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+
 }
 
 .close_side_menu {
   display: flex;
   justify-content: flex-end;
   padding: 16px;
+
 }
 
 .top_content_menu_list {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
+
 }
 
 .top_content_menu_list_element {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -216,6 +242,7 @@ html, body {
   color: #F16D7F;
   margin-top: 24px;
   text-transform: uppercase;
+
 }
 
 .top_content_submenu_list {
@@ -224,7 +251,7 @@ html, body {
 }
 
 .top_content_submenu_list_element {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -239,33 +266,37 @@ html, body {
   color: #F16D7F;
 }
 
+
 .brand_text {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 38px;
   vertical-align: top;
   text-transform: uppercase;
   display: block;
+
 }
 
 .luxury_text {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   margin-top: 8px;
   text-transform: uppercase;
+
 }
 
 .pink_text {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
   color: #F16D7F;
   text-decoration: none;
+
 }
 
 .goods_container {
@@ -273,20 +304,24 @@ html, body {
   flex-flow: column;
   max-width: 1200px;
   margin: 64px auto;
+
 }
 
 .specials_horizontal {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+
 }
 
 .specials_element {
   padding: 20px 16px 0;
+
 }
 
 .specials_inner_element {
   position: relative;
+
 }
 
 .specials_brightness {
@@ -297,6 +332,7 @@ html, body {
   top: 0;
   background-color: rgba(33, 22, 22, 0.7);
   z-index: 1;
+
 }
 
 .specials_image_text_container {
@@ -311,21 +347,25 @@ html, body {
   align-items: center;
   z-index: 2;
   text-decoration: none;
+
 }
+
 
 .specials_image_text_top {
   font-weight: 400;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .specials_image_text_top:hover {
   color: #F16D7F;
+
 }
 
 .featured_items_container {
@@ -333,50 +373,58 @@ html, body {
   flex-flow: column;
   max-width: 1200px;
   margin: 96px auto;
+
 }
 
 .featured_items_heading_text {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   color: #222222;
   text-align: center;
+
 }
 
 .featured_items_subheading_text {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
   text-align: center;
+
 }
 
 .featured_cards_row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
 }
 
 .featured_card_container {
   padding: 20px 16px 0;
+
 }
 
 .featured_card_element {
   position: relative;
+
 }
 
 .featured_card_element:hover .featured_card_brightness {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .featured_card_element:hover .featured_card_add_button {
   display: flex;
   align-items: center;
+
 }
 
 .featured_card_brightness {
@@ -388,27 +436,31 @@ html, body {
   background-color: rgba(33, 22, 22, 0.7);
   z-index: 1;
   display: none;
+
 }
 
 .featured_card_add_button {
   border: 1px solid #FFFFFF;
   padding: 12px;
   display: none;
+
 }
 
 .featured_card_add_button_text {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
   margin-left: 12px;
+
 }
 
 .featured_card_content {
   display: flex;
   flex-flow: column;
+
 }
 
 .featured_content_text {
@@ -417,50 +469,57 @@ html, body {
   background-color: #F8F8F8;
   text-decoration: none;
   padding: 18px;
+
 }
 
 .featured_text_head {
   display: block;
   text-transform: uppercase;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
+
 }
 
 .featured_text_head:hover {
   color: #F16D7F;
+
 }
 
 .featured_text_about {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #5D5D5D;
   margin-top: 12px;
+
 }
 
 .featured_text_about:hover {
   color: #F16D7F;
+
 }
 
 .featured_text_price {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
   margin-top: 18px;
+
 }
 
 .footer_container {
   width: 100%;
   background: #222224;
+
 }
 
 .delivery_container {
@@ -470,6 +529,7 @@ html, body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
+
 }
 
 .delivery_element {
@@ -479,25 +539,29 @@ html, body {
   text-align: center;
   color: #FBFBFB;
   padding: 0 16px;
+
 }
 
 .delivery_text_top {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   margin-top: 28px;
+
 }
 
 .delivery_text_bottom {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   margin-top: 16px;
+
 }
+
 
 .contacts_main_container {
   width: 100%;
@@ -505,6 +569,7 @@ html, body {
   background-image: url("./img/footer_background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
 .contacts_container {
@@ -514,24 +579,27 @@ html, body {
   justify-content: space-between;
   padding: 80px 0 120px;
   margin: 0 auto;
+
 }
 
 .contacts_support {
   display: flex;
   flex-flow: column;
   text-align: center;
+
 }
 
 .contacts_support_text {
   margin-top: 16px;
   max-width: 360px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #222224;
+
 }
 
 .contacts_subscribe {
@@ -540,34 +608,38 @@ html, body {
   align-items: center;
   flex: 1;
   padding-top: 60px;
+
 }
 
 .contacts_subscribe_text_top {
   display: block;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
   text-align: center;
   color: #222224;
+
 }
 
 .contacts_subscribe_text_bottom {
   display: block;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: #222224;
+
 }
 
 .contacts_subscribe_form {
   display: flex;
   flex-flow: row;
   margin-top: 32px;
+
 }
 
 .contacts_subscribe_form_email {
@@ -577,16 +649,18 @@ html, body {
   padding: 16px 22px;
   font-size: 14px;
   line-height: 17px;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
+
 }
+
 
 .contacts_subscribe_form_button {
   color: #FFFFFF;
   background-color: #F16D7F;
   border: 0;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -594,6 +668,7 @@ html, body {
   border-radius: 0 25px 25px 0;
   padding: 16px;
   text-decoration: none;
+
 }
 
 .footer_rights_and_social {
@@ -602,21 +677,24 @@ html, body {
   justify-content: space-between;
   padding: 24px 16px;
   margin: 0 auto;
+
 }
 
 .footer_rights {
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+
 }
 
 .footer_social {
   display: flex;
   gap: 8px;
   flex-flow: row wrap;
+
 }
 
 .social_logo {
@@ -625,64 +703,81 @@ html, body {
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 
 .social_logo:hover {
   background-color: #F16D7F;
+
 }
 
 .social_facebook {
   background-image: url("./img/facebook_logo.svg");
+
 }
 
 .social_facebook:hover {
   background-image: url("./img/facebook_logo_white.svg");
+
 }
 
 .social_instagram {
   background-image: url("./img/instagram_logo.svg");
+
 }
 
 .social_instagram:hover {
   background-image: url("./img/instagram_logo_white.svg");
+
 }
 
 .social_pinterest {
   background-image: url("./img/pinterest_logo.svg");
+
 }
 
 .social_pinterest:hover {
   background-image: url("./img/pinterest_logo_white.svg");
+
 }
 
 .social_twitter {
   background-image: url("./img/twitter_logo.svg");
+
 }
 
 .social_twitter:hover {
   background-image: url("./img/twitter_logo_white.svg");
+
 }
 
 @media (max-width: 1250px) {
   .top_content_menu {
     display: none;
+
   }
 }
+
 @media (max-width: 768px) {
   .featured_cards_row {
     grid-template-columns: repeat(2, 1fr);
+
   }
 
   .contacts_container {
     flex-flow: column;
     align-items: center;
+
   }
+
 }
+
 @media (max-width: 375px) {
   .alt_top_content_menu {
     display: none;
     width: 0;
   }
+
 
   .delivery_container {
     flex-flow: wrap;
@@ -690,33 +785,39 @@ html, body {
 
   .top_model_man {
     display: none;
+
   }
 
   .specials_horizontal {
     flex-flow: column;
+
   }
 
   .featured_cards_row {
     grid-template-columns: repeat(1, 1fr);
+
   }
 
   .top_content_container {
     justify-content: center;
     align-items: center;
     min-height: 363px;
+
   }
 
   .brand_text {
     font-size: 32px;
+
   }
 
   .luxury_text {
     font-size: 16px;
+
   }
 
   .pink_text {
     font-size: 16px;
-  }
-}
 
-/*# sourceMappingURL=style.css.map */
+  }
+
+}

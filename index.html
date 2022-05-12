@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div class="main_container" id="mainContainer">
+<div class="main_container">
     <nav class="nav_container">
         <div class="nav_center_container">
             <div class="navigation_icons_container">
@@ -30,9 +30,9 @@
                         <a class="basket_link" href="#"><img class="basket_image fluid_image"
                                                              src="img/specials_first.png" alt="first"></a>
                         <a class="basket_link" href="#"><img class="basket_image fluid_image"
-                                                             src="img/specials_first.png" alt="second"></a>
+                                                             src="img/featured_top_middle.png" alt="second"></a>
                         <a class="basket_link" href="#"><img class="basket_image fluid_image"
-                                                             src="img/specials_first.png" alt="third"></a>
+                                                             src="img/specials_third.png" alt="third"></a>
                         <div class="basket_total">
                             <span>Total:</span>
                             <span>300 $</span>
@@ -66,29 +66,29 @@
                 <ul class="top_content_menu_list">
                     <li class="top_content_menu_list_element">man
                         <ul class="top_content_submenu_list">
-                            <li class="top_content_submenu_list_element">accessories</li>
-                            <li class="top_content_submenu_list_element">bags</li>
-                            <li class="top_content_submenu_list_element">denim</li>
-                            <li class="top_content_submenu_list_element">t-shirts</li>
+                            <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">bags</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">denim</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
                         </ul>
                     </li>
                     <li class="top_content_menu_list_element">woman
                         <ul class="top_content_submenu_list">
-                            <li class="top_content_submenu_list_element">accessories</li>
-                            <li class="top_content_submenu_list_element">jackets & coats</li>
-                            <li class="top_content_submenu_list_element">polos</li>
-                            <li class="top_content_submenu_list_element">t-shirts</li>
-                            <li class="top_content_submenu_list_element">shirts</li>
+                            <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
                         </ul>
                     </li>
                     <li class="top_content_menu_list_element">kids
                         <ul class="top_content_submenu_list">
-                            <li class="top_content_submenu_list_element">accessories</li>
-                            <li class="top_content_submenu_list_element">jackets & coats</li>
-                            <li class="top_content_submenu_list_element">polos</li>
-                            <li class="top_content_submenu_list_element">t-shirts</li>
-                            <li class="top_content_submenu_list_element">shirts</li>
-                            <li class="top_content_submenu_list_element">bugs</li>
+                            <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                            <li><a class="top_content_submenu_list_element" href="#">bugs</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -102,7 +102,7 @@
             <div class="specials_element">
                 <div class="specials_inner_element">
                     <div class="specials_brightness"></div>
-                    <img src="./img/specials_first.png" class="fluid_image" alt="special for women">
+                    <img src="./img/specials_first.png" class="fluid_image " alt="special for women">
                     <a href="contacts.html" class="specials_image_text_container">
                         <span class="specials_image_text_top">30% off</span>
                         <span class="pink_text">for women</span>
@@ -148,7 +148,7 @@
         <div class="featured_cards_row">
             <div class="featured_card_container">
                 <div class="featured_card_content">
-                    <a href="contacts.html" class="featured_card_element">
+                    <a href="product.html" class="featured_card_element">
                         <div class="featured_card_brightness">
                             <div class="featured_card_add_button">
                                 <img src="./img/basket.svg" alt="add to cart">
@@ -168,7 +168,7 @@
 
             <div class="featured_card_container">
                 <div class="featured_card_content">
-                    <a href="contacts.html" class="featured_card_element">
+                    <a href="product.html" class="featured_card_element">
                         <div class="featured_card_brightness">
                             <div class="featured_card_add_button">
                                 <img src="./img/basket.svg" alt="add to cart">
@@ -265,7 +265,7 @@
         <div class="featured_browse_button"></div>
     </div>
 
-    <div class="delivery_main_container">
+    <div class="footer_container">
         <div class="delivery_container">
             <div class="delivery_element">
                 <img src="./img/delivery.svg" class="fluid_image" alt="Free Delivery">
@@ -294,12 +294,13 @@
                 <div class="contacts_subscribe">
                     <span class="contacts_subscribe_text_top">SUBSCRIBE</span>
                     <span class="contacts_subscribe_text_bottom">FOR OUR NEWLETTER AND PROMOTION</span>
-                    <form class="contacts_subscribe_form" action="mailto:sandroisu1411@gmail.com">
+                    <div class="contacts_subscribe_form">
                         <label>
                             <input class="contacts_subscribe_form_email" type="email" placeholder="Enter Your Email">
                         </label>
-                        <input class="contacts_subscribe_form_button" type="submit" value="Subscribe">
-                    </form>
+                        <a href="mailto:sandroisu1411@gmail.com" class="contacts_subscribe_form_button" type="submit">Subscribe
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
