@@ -1,8 +1,8 @@
 function hideSideMenu() {
     const x = document.getElementById("sideMenu");
-
-        x.classList.remove("opened");
         x.classList.add("closed")
+        x.classList.remove("opened");
+
 
 }
 
