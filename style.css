@@ -233,6 +233,7 @@ html, body {
   text-transform: capitalize;
   margin-top: 12px;
   text-decoration: none;
+  display: block;
 }
 
 .top_content_submenu_list_element:hover {
