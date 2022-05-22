@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="actions.js" defer></script>
@@ -40,68 +39,165 @@
         </div>
     </div>
 </nav>
-<div class="product_top_container">
-    <div class="new_arrivals_main_container">
-        <div class="new_arrivals_container">
-            <a href="#" class="new_arrivals_name">new arrivals</a>
-            <div>
-                <a href="index.html" class="new_arrivals_navigation_text">home/</a>
-                <a href="#" class="new_arrivals_navigation_text">man/</a>
-                <a href="product.html" class="new_arrivals_navigation_text pink_text_color">new arrivals</a>
+
+<div class="full_width">
+    <div class="product_top_container">
+        <div class="new_arrivals_main_container">
+            <div class="new_arrivals_container">
+                <a href="#" class="new_arrivals_name">new arrivals</a>
+                <div>
+                    <a href="index.html" class="new_arrivals_navigation_text">home/</a>
+                    <a href="#" class="new_arrivals_navigation_text">man/</a>
+                    <a href="product.html" class="new_arrivals_navigation_text pink_text_color">new arrivals</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel_main_container">
+            <div class="carousel_left_button" role="button"></div>
+            <div class="carousel_image_container">
+                <img src="./img/product_top.png" class="fluid_image carousel_item active_carousel_item"
+                     alt="product top model">
+                <img src="./img/product_top.png" class="fluid_image carousel_item" alt="product top model">
+                <img src="./img/product_top.png" class="fluid_image carousel_item" alt="product top model">
+            </div>
+            <div class="carousel_right_button" role="button"></div>
+        </div>
+
+
+        <div class="alt_top_content_menu" id="menu">
+            <div class="close_side_menu">
+                <img src="./img/close.svg" onclick="hideMenu()" alt="close">
+            </div>
+            <h2 class="top_content_menu_heading">
+                menu
+            </h2>
+            <ul class="top_content_menu_list">
+                <li class="top_content_menu_list_element">man
+                    <ul class="top_content_submenu_list">
+                        <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">bags</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">denim</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                    </ul>
+                </li>
+                <li class="top_content_menu_list_element">woman
+                    <ul class="top_content_submenu_list">
+                        <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                    </ul>
+                </li>
+                <li class="top_content_menu_list_element">kids
+                    <ul class="top_content_submenu_list">
+                        <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
+                        <li><a class="top_content_submenu_list_element" href="#">bugs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="parent_container_centered row_content_centered floating_container">
+        <div class="floating_card">
+            <span class="pink_text">women collection</span>
+            <div class="pink_rectangle">
+
+            </div>
+            <span class="header_text_18">moschino cheap and chic</span>
+            <span class="floating_paragraph_text">Compellingly actualize fully researched processes before proactive outsourcing.
+                Progressively syndicate collaborative architectures before cutting-edge services.
+                Completely visualize parallel core competencies rather than exceptional portals. </span>
+            <span class="pink_text">$561</span>
+            <div class="floating_divider"></div>
+            <div class="floating_drop_down_container">
+                <a class="floating_paragraph_text drop_down_link" href="#">
+                    choose color
+                </a>
+                <a class="floating_paragraph_text drop_down_link" href="#">
+                    choose size
+                </a>
+                <a class="floating_paragraph_text drop_down_link" href="#">
+                    quantity
+                </a>
+            </div>
+            <a href="#" class="floating_add_button ">
+                <img src="./img/basket_pink.svg" alt="add to cart">
+                <span class="paragraph_text button_text">Add to Cart</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="parent_container_centered">
+        <div class="featured_cards_row">
+            <div class="featured_card_container">
+                <div class="featured_card_content">
+                    <a href="product.html" class="featured_card_element">
+                        <div class="featured_card_brightness">
+                            <div class="featured_card_add_button">
+                                <img src="./img/basket.svg" alt="add to cart">
+                                <span class="featured_card_add_button_text"> Add to cart</span>
+                            </div>
+                        </div>
+                        <img src="./img/featured_top_middle.png" class="featured_card_image" alt="top left card">
+
+                    </a>
+                    <a href="contacts.html" class="featured_content_text">
+                        <span class="featured_text_head">ELLERY X M'O CAPSULE</span>
+                        <span class="featured_text_about">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                        <span class="featured_text_price">$52.00</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="featured_card_container">
+                <div class="featured_card_content">
+                    <a href="contacts.html" class="featured_card_element">
+                        <div class="featured_card_brightness">
+                            <div class="featured_card_add_button">
+                                <img src="./img/basket.svg" alt="add to cart">
+                                <span class="featured_card_add_button_text"> Add to cart</span>
+                            </div>
+                        </div>
+                        <img src="./img/featured_top_right.png" class="featured_card_image" alt="top left card">
+                    </a>
+                    <a href="contacts.html" class="featured_content_text">
+                        <span class="featured_text_head">ELLERY X M'O CAPSULE</span>
+                        <span class="featured_text_about">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                        <span class="featured_text_price">$52.00</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="featured_card_container">
+                <div class="featured_card_content">
+                    <a href="contacts.html" class="featured_card_element">
+                        <div class="featured_card_brightness">
+                            <div class="featured_card_add_button">
+                                <img src="./img/basket.svg" alt="add to cart">
+                                <span class="featured_card_add_button_text"> Add to cart</span>
+                            </div>
+                        </div>
+                        <img src="./img/featured_bottom_left.png" class="featured_card_image" alt="top left card">
+                    </a>
+                    <a href="contacts.html" class="featured_content_text">
+                        <span class="featured_text_head">ELLERY X M'O CAPSULE</span>
+                        <span class="featured_text_about">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</span>
+                        <span class="featured_text_price">$52.00</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="carousel_main_container">
-        <div class="carousel_left_button" role="button"></div>
-        <div class="carousel_image_container">
-                <img src="./img/product_top.png" class="fluid_image carousel_item active_carousel_item"
-                     alt="product top model">
-            <img src="./img/product_top.png" class="fluid_image carousel_item" alt="product top model">
-            <img src="./img/product_top.png" class="fluid_image carousel_item" alt="product top model">
-        </div>
-        <div class="carousel_right_button" role="button"></div>
-    </div>
-
-
-    <div class="alt_top_content_menu" id="menu">
-        <div class="close_side_menu">
-            <img src="./img/close.svg" onclick="hideMenu()" alt="close">
-        </div>
-        <h2 class="top_content_menu_heading">
-            menu
-        </h2>
-        <ul class="top_content_menu_list">
-            <li class="top_content_menu_list_element">man
-                <ul class="top_content_submenu_list">
-                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">bags</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">denim</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
-                </ul>
-            </li>
-            <li class="top_content_menu_list_element">woman
-                <ul class="top_content_submenu_list">
-                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
-                </ul>
-            </li>
-            <li class="top_content_menu_list_element">kids
-                <ul class="top_content_submenu_list">
-                    <li><a class="top_content_submenu_list_element" href="#">accessories</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">jackets & coats</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">polos</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">t-shirts</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">shirts</a></li>
-                    <li><a class="top_content_submenu_list_element" href="#">bugs</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
 </div>
+
 <div class="footer_container">
     <div class="delivery_container">
         <div class="delivery_element">
