@@ -25,6 +25,12 @@ function showMenu() {
     x.classList.add("alt_opened");
 }
 
+function toast(message) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+
 class Carousel {
     constructor(carElem, prev, next) {
         this.carouselItems = carElem.getElementsByClassName("carousel_item");

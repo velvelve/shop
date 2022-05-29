@@ -1,0 +1,103 @@
+.text {
+    font-family: 'Lato', serif;
+    font-style: normal;
+    margin-bottom: 16px;
+    transition: all .5s;
+
+    &__black {
+        color: $colorBlack;
+    }
+
+    &__white {
+        color: $whiteColor;
+    }
+
+    &__pink {
+        color: $pinkColor;
+    }
+
+    &__gray {
+        color: $colorGray;
+    }
+
+    &__uppercase {
+        text-transform: uppercase;
+    }
+
+    &__capitalize {
+        text-transform: capitalize;
+    }
+
+    &__centered {
+        text-align: center;
+    }
+
+    &__size_30 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    &__size_18 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__size_16 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__size_14 {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__size_12 {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.link_text {
+    text-decoration: none;
+
+    &:hover {
+        color: $pinkColor;
+    }
+}
+
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+
+    #snackbar.show {
+        visibility: visible;
+    }
+}
