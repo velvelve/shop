@@ -25,10 +25,16 @@ function showMenu() {
     x.classList.add("alt_opened");
 }
 
-function toast(message) {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+function toast(e, message) {
+    e.preventDefault()
+    var x = document.getElementById("toast");
+    x.classList.remove("toast_box__hidden");
+    x.classList.add("toast_box__show");
+    x.innerHTML = message
+    setTimeout(function () {
+        x.classList.remove("toast_box__show");
+        x.classList.add("toast_box__hidden");
+    }, 1500);
 }
 
 class Carousel {

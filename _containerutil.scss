@@ -1,6 +1,10 @@
 .full_width {
     display: block;
 
+    &__relative {
+        position: relative;
+    }
+
     &__flex_center {
         display: flex;
         justify-content: center;

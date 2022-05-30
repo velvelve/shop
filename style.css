@@ -72,39 +72,34 @@
   color: #F16D7F;
 }
 
-#snackbar {
-  visibility: hidden;
-  /* Hidden by default. Visible on click */
+.toast_box {
   min-width: 250px;
-  /* Set a default minimum width */
   margin-left: -125px;
-  /* Divide value of min-width by 2 */
   background-color: #333;
-  /* Black background color */
   color: #fff;
-  /* White text color */
   text-align: center;
-  /* Centered text */
   border-radius: 2px;
-  /* Rounded borders */
   padding: 16px;
-  /* Padding */
   position: fixed;
-  /* Sit on top of the screen */
-  z-index: 1;
-  /* Add a z-index if needed */
+  z-index: 10;
   left: 50%;
-  /* Center the snackbar */
   bottom: 30px;
-  /* 30px from the bottom */
 }
 
-#snackbar #snackbar.show {
+.toast_box__hidden {
+  visibility: hidden;
+}
+
+.toast_box__show {
   visibility: visible;
 }
 
 .full_width {
   display: block;
+}
+
+.full_width__relative {
+  position: relative;
 }
 
 .full_width__flex_center {
@@ -283,7 +278,6 @@ body {
 }
 
 .button__transparent_button:hover {
-  border: 1px solid #F16D7F;
   background-color: #F16D7F;
   color: #FFFFFF;
   background: url(./img/basket.svg) no-repeat 5% 50% #F16D7F;
@@ -618,6 +612,8 @@ body {
   background-color: #FFFFFF;
   overflow: hidden;
   padding: 0 32px;
+  -webkit-box-shadow: 0 5px 10px #e2e2e2;
+          box-shadow: 0 5px 10px #e2e2e2;
 }
 
 .alt_closed {
@@ -1007,6 +1003,7 @@ body {
 }
 
 .carousel_main_container {
+  position: relative;
   width: 100%;
   background: #F7F7F7;
   display: -webkit-box;
