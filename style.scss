@@ -87,7 +87,6 @@ body {
 
     &:hover {
       border: 1px solid $pinkColor;
-      background-color: $pinkColor;
       color: $whiteColor;
       background: url(./img/basket.svg) no-repeat 5% 50% $pinkColor;
     }
@@ -95,70 +94,18 @@ body {
 
 }
 
-
-.row_content_centered {
-  display: flex;
-  justify-content: center;
-}
-
-.pink_text_color {
-  color: #F16D7F;
-}
-
-/*text utilities*/
-
-
-.paragraph_text {
-  font-family: 'Lato', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: $pinkColor;
-}
-
-
-.heading_text {
-  display: block;
-  text-transform: uppercase;
-  font-family: 'Lato', serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #000000;
-}
-
-
-.floating_paragraph_text {
-  font-family: 'Lato', serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #5E5E5E;
-  margin: 48px 18px 32px 18px;
-}
-
-
-
-.button_text {
-  display: block;
-  margin: 0 6px;
-  transition: all 0.5s;
-}
-
-.drop_down_link {
-  text-transform: uppercase;
+.floating_drop_down_link {
+  margin: 0 20px;
   text-decoration: none;
-  border: 0px;
-  outline: 0px;
+  border: 0;
+  outline: 0;
 }
 
-.drop_down_link:hover {
+.floating_drop_down_link:hover {
   color: $pinkColor;
 }
 
-.drop_down_link:after {
+.floating_drop_down_link:after {
   content: url("./img/drop_down.svg");
   margin-left: 4px;
 }
@@ -166,27 +113,16 @@ body {
 .floating_divider {
   width: 100%;
   border: 1px solid #EAEAEA;
-  margin: 64px 0;
-}
-
-.floating_add_button {
-  display: flex;
-  border: 1px solid $pinkColor;
-  padding: 12px;
-  text-decoration: none;
-  color: $pinkColor;
-}
-
-.floating_add_button:hover .button_text {
-  margin: 0 12px;
+  margin-top: 64px;
 }
 
 .floating_drop_down_container {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  padding: 64px 0;
 }
-
 
 .top_content_menu_heading {
   font-family: 'Lato', serif;
@@ -202,7 +138,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: $standardContainerWidth;
   margin: 0 auto;
   padding: 18px 32px;
 
@@ -264,7 +200,8 @@ body {
   height: 10px;
   background-color: $whiteColor;
   top: $basketMenuTopIndent - 5px;
-  border: 1px 0 0 1px solid #E8E8E8;
+  border-left: 1px solid #E8E8E8;
+  border-top: 1px solid #E8E8E8;
   right: 10px;
   transform: rotate(45deg);
   z-index: 3;
@@ -386,6 +323,7 @@ body {
   background-color: #FFFFFF;
   overflow: hidden;
   padding: 0 32px;
+  box-shadow: 0 5px 10px rgb(226, 226, 226);
 }
 
 .alt_closed {
@@ -759,7 +697,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 64px 0;
+  padding: 64px 20px;
 }
 
 .pink_rectangle {
@@ -789,7 +727,7 @@ body {
   text-align: center;
   color: #FBFBFB;
   padding: 0 16px;
-
+  margin-bottom: 20px;
 }
 
 .delivery_text_top {
@@ -1005,6 +943,7 @@ body {
 @import "product";
 @import "textutil";
 @import "containerutil";
+@import "catalog";
 
 @media (max-width: 1200px) {
   .top_container {
@@ -1019,7 +958,7 @@ body {
     margin-top: 0;
   }
 
-  .case__delivry {
+  .case__delivery {
     flex-flow: row wrap;
     justify-content: center;
     max-width: 360px;
@@ -1080,6 +1019,22 @@ body {
 
 
 @media (max-width: 375px) {
+
+  .text__size_18{
+    font-size: 16px;
+  }
+
+  .text__size_16{
+    font-size: 14px;
+  }
+
+  .text__size_24{
+    font-size: 20px;
+  }
+
+  .text__size_30{
+    font-size: 24px;
+  }
 
 
   .alt_top_content_menu {

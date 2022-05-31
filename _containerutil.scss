@@ -33,9 +33,9 @@
 
     &__floating {
         max-width: $standardContainerWidth;
-        margin: -64px auto 128px;
+        margin: 128px auto;
         background-color: #FFFFFF;
-        position: relative;
+        transform: translateY(-10%);
         z-index: 1;
         border: 1px solid #EAEAEA;
         display: flex;
