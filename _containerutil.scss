@@ -10,6 +10,11 @@
     justify-content: center;
   }
 
+  &__flex_space {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__black_background {
     background: #222224;
   }
@@ -68,8 +73,13 @@
     margin-top: 64px;
   }
 
+
   &__padding_20 {
     padding: 20px;
+  }
+
+  &__padding_64 {
+    padding: 64px 20px;
   }
 
   &__padding_100 {

@@ -30,6 +30,13 @@ body {
   margin: auto;
 }
 
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-width: 260px;
+}
+
 .button {
   font-family: 'Lato', serif;
   font-style: normal;
@@ -88,6 +95,17 @@ body {
       border: 1px solid $pinkColor;
       color: $whiteColor;
       background: url(./img/basket.svg) no-repeat 5% 50% $pinkColor;
+    }
+  }
+
+  &__gray_button {
+    border: 1px solid $colorGray;
+    color: $colorGray;
+
+    &:hover {
+      border: 1px solid $pinkColor;
+      color: $whiteColor;
+      background: $pinkColor;
     }
   }
 
@@ -663,7 +681,7 @@ body {
 }
 
 .new_arrivals_container {
-  max-width: 1200px;
+  max-width: $standardContainerWidth;
   margin: 0 auto;
   padding: 60px 32px;
   display: flex;
@@ -940,6 +958,7 @@ body {
 @import "textutil";
 @import "containerutil";
 @import "catalog";
+@import "cart";
 
 @media (max-width: 1200px) {
   .top_container {
