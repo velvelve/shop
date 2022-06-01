@@ -6,7 +6,6 @@ $colorGray: #9F9F9F;
 $basketMenuTopIndent: 35px;
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -190,7 +189,7 @@ body {
   background-color: #FFFFFF;
   border: 1px solid #E8E8E8;
   padding: 8px;
-  z-index: 2;
+  z-index: 7;
 }
 
 .basket_pointer {
@@ -239,8 +238,6 @@ body {
   display: block;
 
 }
-
-
 
 
 .top_main_container {
@@ -315,6 +312,7 @@ body {
 
 .alt_top_content_menu {
   height: 100%;
+  min-height: 700px;
   display: none;
   position: absolute;
   top: 0;
@@ -323,6 +321,7 @@ body {
   background-color: #FFFFFF;
   overflow: hidden;
   padding: 0 32px;
+  z-index: 6;
   box-shadow: 0 5px 10px rgb(226, 226, 226);
 }
 
@@ -599,7 +598,6 @@ body {
 }
 
 
-
 .featured_content_text {
   display: flex;
   flex-flow: column;
@@ -688,8 +686,6 @@ body {
 .new_arrivals_navigation_text:hover {
   color: #F16D7F;
 }
-
-
 
 
 .floating_card {
@@ -949,13 +945,62 @@ body {
   .top_container {
     height: 400px;
   }
+
+  .hidden_filter {
+    display: none;
+  }
+
+  .sort_container {
+    flex: 1;
+  }
+
+  .filter {
+    width: 200px;
+  }
 }
 
 
 @media (max-width: 768px) {
 
+  .filter_container details:first-child > summary {
+    font-size: 0;
+  }
+
+  .text__size_18 {
+    font-size: 16px;
+  }
+
+  .text__size_16 {
+    font-size: 14px;
+  }
+
+  .text__size_24 {
+    font-size: 20px;
+  }
+
+  .text__size_30 {
+    font-size: 24px;
+  }
+
+  .text__size_14 {
+    font-size: 12px;
+  }
+
+  .hidden_filter {
+    display: none;
+  }
+
+  .filter_sort_container {
+    justify-content: space-between;
+  }
+
+  .filter {
+    width: 200px;
+    flex: none;
+  }
+
   .case__floating {
-    margin-top: 0;
+    transform: translate(0px, 0px);
   }
 
   .case__delivery {
@@ -1020,22 +1065,16 @@ body {
 
 @media (max-width: 375px) {
 
-  .text__size_18{
-    font-size: 16px;
+  .sort_container {
+    flex-flow: column;
+    text-align: end;
   }
 
-  .text__size_16{
-    font-size: 14px;
-  }
 
-  .text__size_24{
-    font-size: 20px;
+  .new_arrivals_container {
+    flex-flow: column;
+    justify-content: center;
   }
-
-  .text__size_30{
-    font-size: 24px;
-  }
-
 
   .alt_top_content_menu {
     display: none;

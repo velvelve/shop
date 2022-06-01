@@ -1,78 +1,78 @@
 .full_width {
-    display: block;
+  display: block;
 
-    &__relative {
-        position: relative;
-    }
+  &__relative {
+    position: relative;
+  }
 
-    &__flex_center {
-        display: flex;
-        justify-content: center;
-    }
+  &__flex_center {
+    display: flex;
+    justify-content: center;
+  }
 
-    &__black_background {
-        background: #222224;
-    }
+  &__black_background {
+    background: #222224;
+  }
 
-    &__pink_background {
-        background-color: #F1E4E6;
-    }
+  &__pink_background {
+    background-color: #F1E4E6;
+  }
 
-    &__margin_48 {
-        margin-top: 48px;
-    }
+  &__margin_48 {
+    margin-top: 48px;
+  }
 
-    &__margin_80 {
-        margin-top: 80px;
-    }
+  &__margin_80 {
+    margin-top: 80px;
+  }
 }
 
 .case {
+  max-width: $standardContainerWidth;
+  margin: 0 auto;
+
+  &__floating {
     max-width: $standardContainerWidth;
-    margin: 0 auto;
+    margin: 0 auto 128px;
+    background-color: #FFFFFF;
+    transform: translate(0px, -64px);
+    z-index: 1;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+  }
 
-    &__floating {
-        max-width: $standardContainerWidth;
-        margin: 128px auto;
-        background-color: #FFFFFF;
-        transform: translateY(-10%);
-        z-index: 1;
-        border: 1px solid #EAEAEA;
-        display: flex;
-        justify-content: center;
-    }
+  &__column {
+    display: flex;
+    flex-flow: column;
+  }
 
-    &__column {
-        display: flex;
-        flex-flow: column;
-    }
-
-    &__row {
-        display: flex;
-        flex-flow: row;
-    }
+  &__row {
+    display: flex;
+    flex-flow: row;
+  }
 
 
-    &__top_menu {
-        justify-content: space-between;
-        flex-flow: wrap;
-        padding: 20px;
-    }
+  &__top_menu {
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 20px;
+  }
 
-    &__delivery {
-        justify-content: space-between;
+  &__delivery {
+    justify-content: space-between;
 
-    }
+  }
 
-    &__margin_64 {
-        margin-top: 64px;
-    }
+  &__margin_64 {
+    margin-top: 64px;
+  }
 
-    &__padding_20 {
-        padding: 20px;
-    }
+  &__padding_20 {
+    padding: 20px;
+  }
 
-    &__padding_100 {
-        padding: 100px 0;
-    }
+  &__padding_100 {
+    padding: 100px 0;
+  }
 }

@@ -6,7 +6,6 @@ $filterSortPadding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
   position: relative;
 }
 
@@ -14,41 +13,95 @@ $filterSortPadding: 20px;
   display: flex;
   flex-flow: row;
   justify-content: center;
+  gap: 10px;
+  z-index: 5;
 }
 
-.filter_container{
+.filter_container {
   position: relative;
   width: 360px;
   height: 100%;
+  flex: 1;
 }
 
-.filter{
+.filter {
+  width: 360px;
   position: absolute;
   top: 35px;
   left: 0;
   z-index: 5;
   background: #FFFFFF;
-}
-
-
-
-.filter_name{
-  display: block;
-  margin-right: 20px;
-}
-
-.filter_summary{
+  padding: 16px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
-summary{
+details[open] > summary {
+  color: #F16D7F;
+  list-style: none;
+}
+
+details[open] > summary {
+  color: #F16D7F;
+  list-style: none;
+}
+
+details[open] > img {
+
+}
+
+.filter_name {
+}
+
+.filter_summary {
+  width: fit-content;
+  padding-right: 30px;
+}
+
+.filter_image {
+  height: 20px;
+  width: 20px;
+  padding-left: 11px;
+}
+
+summary {
   height: 40px;
-  line-height: 40px;
-  display: flex;
+  margin-left: 10px;
   list-style-type: none;
+  cursor: pointer;
+}
+
+.filter_container details:first-child > summary:after {
+  content: url("img/filter.svg");
+}
+
+.filter_container details[open]:first-child > summary:after {
+  content: url("./img/filter_pink.svg");
+}
+
+.filter_container details[open]:first-child{
+  box-shadow: 0 5px 10px rgb(226, 226, 226);
+  z-index: 6;
+}
+
+.filter_container details:not(:first-child) > summary{
+  border-left: 5px solid $pinkColor;
+  border-bottom: 1px solid $colorGray;
+  margin: 10px 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .hidden_filter {
   visibility: hidden;
+}
+
+.drop_down{
+  border: 0;
+  outline: 0;
 }
