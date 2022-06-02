@@ -26,10 +26,6 @@ body {
   object-fit: cover;
 }
 
-.rttt {
-  max-width: 260px;
-}
-
 .button {
   font-family: "Lato", serif;
   font-style: normal;
