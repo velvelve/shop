@@ -34,6 +34,25 @@
     text-align: center;
   }
 
+  &__cart_text_top{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__cart_text_bottom{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__cart_text__button{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   &__size_30 {
     font-weight: 700;
     font-size: 30px;
@@ -44,6 +63,12 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
+  }
+
+  &__size_22 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
   }
 
   &__size_18 {
