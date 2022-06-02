@@ -985,6 +985,17 @@ body {
     font-size: 0;
   }
 
+  .filter_container details:first-child > summary:after {
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .filter_container details[open]:first-child > summary:after {
+    background: url("./img/filter_pink.svg") no-repeat bottom;
+    background-size: 40px 40px;
+  }
+
   .text__size_18 {
     font-size: 16px;
   }

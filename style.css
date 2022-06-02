@@ -1143,11 +1143,18 @@ summary {
 }
 
 .filter_container details:first-child > summary:after {
-  content: url("img/filter.svg");
+  background-size: 18px 18px;
+  background: url("img/filter.svg") no-repeat bottom;
+  display: inline-block;
+  vertical-align: center;
+  width: 25px;
+  height: 25px;
+  content: "";
+  margin-left: 10px;
 }
 
 .filter_container details[open]:first-child > summary:after {
-  content: url("./img/filter_pink.svg");
+  background: url("./img/filter_pink.svg") no-repeat bottom;
 }
 
 .filter_container details[open]:first-child {
@@ -1174,6 +1181,7 @@ summary::-webkit-details-marker {
 .drop_down {
   border: 0;
   outline: 0;
+  text-align: end;
 }
 
 .cart_container {
@@ -1233,6 +1241,17 @@ summary::-webkit-details-marker {
 @media (max-width: 768px) {
   .filter_container details:first-child > summary {
     font-size: 0;
+  }
+
+  .filter_container details:first-child > summary:after {
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .filter_container details[open]:first-child > summary:after {
+    background: url("./img/filter_pink.svg") no-repeat bottom;
+    background-size: 40px 40px;
   }
 
   .text__size_18 {
