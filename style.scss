@@ -45,10 +45,10 @@ body {
   padding: 16px;
   text-decoration: none;
   transition: all .5s;
+  cursor: pointer;
 
   &__pink_button {
     border: 0;
-    border-radius: 0 25px 25px 0;
     background-color: $pinkColor;
     color: $whiteColor;
 
@@ -56,6 +56,10 @@ body {
       background-color: $whiteColor;
       color: $pinkColor;
     }
+  }
+
+  &__rounded_button {
+    border-radius: 0 25px 25px 0;
   }
 
   &__white_button {
@@ -981,35 +985,25 @@ body {
 
 @media (max-width: 768px) {
 
-  .cart_image {
-    width: 140px;
-    height: 188px;
-    object-fit: cover;
+  .form_container {
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: none;
+    width: 100%;
+    gap: 20px;
+
   }
 
-  .cart_item {
-    height: 188px;
+  .cart_submit {
+    margin-top: 0;
+    padding-left: 20px;
   }
-
-  .cart_text {
-    padding: 16px;
-  }
-
-  .text__cart_text_top {
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .text__cart_text_bottom {
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .text__cart_text__button {
-    text-transform: capitalize;
-    font-size: 12px;
-    line-height: 14px;
+  .cart_address {
   }
 
   .case__cart {
+    flex-flow: column;
+    align-items: center;
     justify-content: center;
   }
 
@@ -1130,7 +1124,57 @@ body {
 }
 
 
+@media (max-width: 500px) {
+  .cart_image {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+
+  .cart_item {
+    height: 250px;
+  }
+
+}
+
+
 @media (max-width: 375px) {
+
+  .form_container {
+    flex-flow: column;
+
+  }
+
+
+  .text__cart_text_top {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .text__cart_text_bottom {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .text__cart_text__button {
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .cart_image {
+    width: 140px;
+    height: 188px;
+    object-fit: cover;
+  }
+
+
+  .cart_item {
+    height: 188px;
+  }
+
+  .cart_text {
+    padding: 16px;
+  }
 
 
   .sort_container {
@@ -1196,11 +1240,11 @@ body {
     font-size: 16px;
 
   }
-
-  @media (max-width: 285px) {
-    .cart_image {
-      display: none;
-    }
-  }
-
 }
+
+@media (max-width: 285px) {
+  .cart_image {
+    display: none;
+  }
+}
+
