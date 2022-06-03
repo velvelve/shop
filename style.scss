@@ -963,6 +963,7 @@ body {
 @import "containerutil";
 @import "catalog";
 @import "cart";
+@import "registration";
 
 @media (max-width: 1200px) {
   .top_container {
@@ -985,7 +986,15 @@ body {
 
 @media (max-width: 768px) {
 
+  .reg_feature_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
 
+  .reg_container {
+    gap: 20px;
+  }
   .form_container {
     flex-flow: row;
     justify-content: space-between;
@@ -1136,6 +1145,10 @@ body {
     object-fit: cover;
   }
 
+  .reg_container {
+    flex-flow: column;
+    align-items: center;
+  }
 
   .cart_item {
     height: 250px;
