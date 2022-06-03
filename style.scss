@@ -985,6 +985,7 @@ body {
 
 @media (max-width: 768px) {
 
+
   .form_container {
     flex-flow: row;
     justify-content: space-between;
@@ -994,11 +995,15 @@ body {
 
   }
 
-  .cart_submit {
-    margin-top: 0;
-    padding-left: 20px;
-  }
   .cart_address {
+    flex: 1;
+    margin-top: 64px;
+  }
+
+  .cart_submit {
+    margin-top: 100px;
+    padding-left: 20px;
+    flex: 1;
   }
 
   .case__cart {
@@ -1146,6 +1151,13 @@ body {
 
   }
 
+  .cart_address {
+    margin-top: 48px;
+  }
+
+  .cart_submit {
+    margin-top: 48px;
+  }
 
   .text__cart_text_top {
     font-size: 16px;

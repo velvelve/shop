@@ -1333,9 +1333,15 @@ summary::-webkit-details-marker {
     gap: 20px;
   }
 
+  .cart_address {
+    flex: 1;
+    margin-top: 64px;
+  }
+
   .cart_submit {
-    margin-top: 0;
+    margin-top: 100px;
     padding-left: 20px;
+    flex: 1;
   }
 
   .case__cart {
@@ -1470,6 +1476,14 @@ summary::-webkit-details-marker {
 @media (max-width: 375px) {
   .form_container {
     flex-flow: column;
+  }
+
+  .cart_address {
+    margin-top: 48px;
+  }
+
+  .cart_submit {
+    margin-top: 48px;
   }
 
   .text__cart_text_top {
