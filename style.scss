@@ -278,11 +278,13 @@ body {
   flex: 1;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .top_model_man_img {
+  height: 100%;
   max-width: 100%;
-  max-height: 100%;
+  object-fit: cover;
 }
 
 .top_content_container {
@@ -966,9 +968,7 @@ body {
 @import "registration";
 
 @media (max-width: 1200px) {
-  .top_container {
-    height: 400px;
-  }
+
 
   .hidden_filter {
     display: none;
@@ -985,6 +985,10 @@ body {
 
 
 @media (max-width: 768px) {
+
+  .top_container {
+    height: 363px;
+  }
 
   .reg_feature_text {
     font-weight: 300;
@@ -1124,10 +1128,6 @@ body {
   .carousel_image_container {
     width: 460px;
     height: 560px;
-  }
-
-  .top_model_man {
-    display: none;
   }
 
   .top_content_container {
